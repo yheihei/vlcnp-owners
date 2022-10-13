@@ -1,0 +1,541 @@
+@charset "UTF-8";
+/*
+Template:draft-portfolio
+Theme Name:draft-portfolio_child
+*/
+
+html {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+#cssmenu a {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 100;
+}
+
+@media (max-width: 767px) {
+  #cssmenu #menu-button {
+    border-width: 1px;
+  }
+  footer #cssmenu {
+    margin:initial;
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+header h1.site-title,
+header p.site-description {
+  font-family: "Saira Condensed", sans-serif;
+}
+header h1.site-title {
+  font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+  div.main-nav ul li {
+    text-align: left;
+  }
+}
+
+div.welcome h1 {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 24px;
+}
+
+div#content {
+  min-height: 800px;
+}
+
+.col-1-2-custom, .col-6-12-custom {
+	width: 50% !important;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  .mobile-col-1-1 {
+    width: 100% !important;
+  }
+
+  .mobile-col-2-3, .mobile-col-8-12 {
+    width: 66.66% !important;
+  }
+
+  .mobile-col-1-2, .mobile-col-6-12 {
+    width: 50% !important;
+  }
+
+  .mobile-col-1-3, .mobile-col-4-12 {
+    width: 33.33% !important;
+  }
+
+  .mobile-col-1-4, .mobile-col-3-12 {
+    width: 25% !important;
+  }
+
+  .mobile-col-1-5 {
+    width: 20% !important;
+  }
+
+  .mobile-col-1-6, .mobile-col-2-12 {
+    width: 16.667% !important;
+  }
+
+  .mobile-col-1-7 {
+    width: 14.28% !important;
+  }
+
+  .mobile-col-1-8 {
+    width: 12.5% !important;
+  }
+
+  .mobile-col-1-9 {
+    width: 11.1% !important;
+  }
+
+  .mobile-col-1-10 {
+    width: 10% !important;
+  }
+
+  .mobile-col-1-11 {
+    width: 9.09% !important;
+  }
+
+  .mobile-col-1-12 {
+    width: 8.33% !important;
+  }
+
+  /* Layout Columns */
+  .mobile-col-11-12 {
+    width: 91.66%  !important;
+  }
+
+  .mobile-col-10-12 {
+    width: 83.333% !important;
+  }
+
+  .mobile-col-9-12 {
+    width: 75% !important;
+  }
+
+  .mobile-col-5-12 {
+    width: 41.66% !important;
+  }
+
+  .mobile-col-7-12 {
+    width: 58.33% !important;
+  }
+}
+@media handheld, only screen and (max-width: 424px) {
+  .small-col-1 {
+    width: 100% !important;
+  }
+}
+article.grid-item .post-title,
+.yhei-grid__item .post-title {
+  padding: 1em;
+  line-height: 1.5;
+  background-color: #fffafa;
+}
+article.grid-item .post-title h2.entry-title,
+.yhei-grid__item .post-title h2.entry-title {
+  padding: 0;
+  margin: 0;
+  color: #404040;
+  font-size: 1.3em;
+}
+article.grid-item .post-title h2.entry-title a,
+.yhei-grid__item .post-title h2.entry-title a {
+  color: #404040;
+}
+article.grid-item .post-title h2.entry-title a:hover,
+.yhei-grid__item.post-title h2.entry-title a:hover {
+  opacity: 0.5;
+}
+p.date {
+  color: gray;
+  text-align: left;
+  margin: 8px 0 0 0;
+}
+
+p.date--small {
+  font-size: 1.0rem;
+}
+.yhei-grid__item {
+  position: relative;
+}
+.yhei-grid__item .overbox {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  padding: 0 1em;
+}
+
+article.grid-item .overbox,
+.yhei-grid__item .overbox {
+  top: 1em;
+  text-align: left;
+  padding: 0;
+}
+article.grid-item .overbox .overtext,
+.yhei-grid__item .overbox .overtext {
+  text-align: left;
+}
+article.grid-item .overbox .overtext a,
+.yhei-grid__item .overbox .overtext a {
+  background-color: #404040;
+  padding: 1em;
+  color: white;
+}
+.yhei-grid__item .tagline {
+  opacity: 1;
+}
+
+.grid-item:hover .post-thumb img {
+  opacity: 0.5;
+}
+
+.entry-content h2,h3,h4,h5,h6 {
+  margin-top:2rem;
+  margin-bottom:1rem;
+}
+
+.entry-content h2 {
+  padding: 16px 0;
+  border: solid black;
+  border-width: 2px 0;
+}
+
+.entry-content h2 > a {
+  text-decoration: underline;
+}
+
+.entry-content h3 {
+  border: solid black;
+  border-width: 0 0 2px 0;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .entry-content h2 {
+    padding: 16px;
+    margin: 2rem calc(50% - 50vw) 1rem;
+    width: 100vw;
+  }
+}
+
+div.entry-content p,
+div.entry-content.entry-content--category {
+  line-height: 2;
+  font-size: 18px;
+}
+div.entry-content ul,
+div.entry-content ol {
+  font-size: 18px;
+  line-height: 1.5;
+}
+div.entry-content ul,
+div.entry-content ol {
+  margin-bottom: 1.5em;
+}
+div.entry-content blockquote {
+  background-color: #e8e8e8;
+  border-left-color: #e8e8e8;
+  background-image: url(../draft-portfolio_child/img/quoat.png);
+  background-repeat: no-repeat;
+  background-position: left 16px top 16px;
+  padding-top: 56px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #CCC;
+}
+
+div.entry-content a {
+  word-break: break-all;
+}
+
+.col-8-12-custom {
+  width: 60%;
+}
+
+#comments {
+  margin-bottom: 80px;
+}
+
+.site-footer #cssmenu ul {
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .site-footer #cssmenu ul {
+    max-height: initial;
+  }
+  .site-footer #cssmenu ul li {
+    display: inline-block;
+    width: initial;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    display: block;
+  }
+}
+.site-footer #cssmenu > ul > li > a {
+  padding: 15px 30px 15px 0px;
+}
+
+.site-footer .site-info, .site-footer .site-info a {
+  text-align: left;
+}
+
+h2.widget-title {
+  font-family: "Saira Condensed", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.heading {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 36px;
+  line-height: 1.1;
+  font-feature-settings: "palt";
+}
+
+.heading--primary {
+  border: solid;
+  border-width: 0 0 2px 0;
+}
+
+.heading--dropcap:first-letter {
+  font-size: 200%;
+}
+
+.heading__caption {
+  display: block;
+  font-size: 14px;
+  border: 2px solid;
+  border-width: 2px 0 0 0;
+  padding-top: 8px;
+}
+
+.heading__caption--small {
+  font-size: 12px;
+}
+
+a.top-category-link {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.entry--related {
+  margin-top:0;
+  margin-bottom:0;
+}
+
+/* サイドバーがスマホ表示時にメインカラムと重なる不具合修正 */
+@media handheld, only screen and (max-width: 767px) {
+  #secondary {
+    padding: 0;
+  }
+}
+
+.yarpp-related h3.yarpp-related--custom{
+  font-weight: normal;
+  padding: 0;
+  font-size: inherit;
+  /* text-transform: capitalize; */
+  margin: 0 0 1rem 0;
+}
+
+/* サイドバーのデザイン */
+#secondary ul {
+  margin: 0;
+}
+
+#secondary ul li {
+  padding-left: 0;
+}
+
+#secondary .children li {
+  padding-left: 1rem;
+}
+
+#secondary h2.widget-title {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 8px;
+  border: solid black;
+  border-width: 0 0 2px 0;
+}
+
+#secondary h2.widget-title:first-letter {
+  font-size: 200%;
+}
+
+/*-- 人気記事デザイン --*/
+ul.wpp-list li {
+  position: relative;/*相対位置*/
+}
+
+ul.wpp-list li img {/*アイキャッチ画像*/
+  margin: 0 16px 0 0;/*画像の余白*/
+}
+
+ul.wpp-list li a.wpp-post-title {/*記事タイトル*/
+  display: block;/*ブロック形式で表示*/
+  font-size: 15px;
+  color: black;/*文字色*/
+  text-decoration: none;/*タイトルの下線なし*/
+  text-transform: capitalize;
+}
+
+ul.wpp-list li a.wpp-post-title:hover {
+  color: #4169e1;/*ホバー時のタイトル色*/
+}
+
+/***
+* ブログ記事一覧の 続きを読む のスタイリング
+*/
+.more-link {
+  text-align: right;
+}
+.more-link--link {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+a.more-link__default {
+  color: black;
+  border: solid;
+  border-color: black;
+  border-width: 0 0 2px;
+}
+a.more-link__default:hover {
+  color: #161616;
+  border-color: #161616;
+}
+.entry-footer {
+  margin-bottom:4rem;
+  text-align: right;
+}
+
+.entry-content--category > img {
+  display: block;
+  margin-bottom:1rem;
+}
+
+.entry-content td {
+  padding: 16px;
+}
+
+/* 人気記事一覧カスタマイズ */
+.yhei-post {
+  line-height: 1.5;
+}
+
+.yhei-post__thumbnail {
+  overflow: hidden;
+}
+
+.yhei-post__eyecatch {
+  display: block;
+  transition: 0.5s;
+}
+
+.yhei-post__eyecatch:hover{
+  opacity:0.5;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.yhei-post__description {
+  line-height: 1.5;
+  padding: 1em;
+  background-color: #fffafa;
+}
+
+.yhei-post__title {
+  padding:0 0 8px 0;
+  margin:0;
+}
+
+.yhei-post__title--h2 {
+  font-size: 1.3em;
+}
+
+.yhei-post__view-counts {
+  margin:0;
+  padding:0;
+}
+
+.yhei-post__view-counts--default {
+  color: gray;
+}
+
+.yhei-grid {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 49% 49%;
+  -ms-grid-columns: 49% 49%;
+  column-gap: 2%;
+}
+
+@media (max-width: 767px) {
+  .yhei-grid {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 100%;
+    -ms-grid-columns: 100;
+    column-gap: 0;
+  }
+}
+
+.yhei-grid__item {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -ms-column-break-inside: avoid;
+  -o-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.yhei-grid__item--primary {
+  background-color: #fffafa;
+}
+
+/*# sourceMappingURL=style.css.map */
