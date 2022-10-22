@@ -26,9 +26,6 @@ get_header(); ?>
 
 		endwhile; // End of the loop.
 		?>
-		<?php 
-		related_posts();
-		 ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
