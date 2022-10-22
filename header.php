@@ -15,7 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Saira+Condensed:100,400,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Saira+Condensed:100,400,600,900" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -50,7 +50,7 @@
             <?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<div class="main-nav col-6-12 pull-right">
+		<div class="main-nav col-6-12 pull-right" style="padding-right:0;">
 
 		<?php	if (  has_nav_menu( 'primary' ) ) {
 		 wp_nav_menu(array(
@@ -62,11 +62,7 @@
     	</div>
         <!--<?php do_action('draft-welcome-text')?>-->
         <?php if ( is_front_page() ) : ?>
-        <div class="col-10-12 welcome">
-            <h1>Welcome To Yhei Web Desgin,<br>
-I Am A Professional Web Designer & Writer <br>
-From Sapporo.</h1>
-        </div>
+        <div class="cover"><img class="cover__image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cover.jpeg" /></div>
         <?php endif; ?>
 
 	</header><!-- #masthead -->

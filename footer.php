@@ -28,7 +28,7 @@
     	</div>
 
 		<div class="site-info col-1-1">
-			Copyright &copy; <span>Yhei Web Design</span>. 札幌Web制作
+			Copyright &copy; 2022 Very Long CNP.
 		</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->

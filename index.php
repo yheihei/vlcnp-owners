@@ -17,56 +17,80 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<?php if ( is_home() && ! is_paged() ) : ?>
 			<?php
-				// 特定のカテゴリの記事一覧を表示
-				// TODO: 管理画面から設定可能なようにすること
-				// 日記カテゴリーを表示.
 				get_template_part(
 					'template-parts/index',
-					'category',
+					'about',
 					array(
 						'slug'      => 'blogs',
-						'title'     => 'Diary',
+						'title'     => 'VLCNPとは',
+						'sub_title' => '思っていること 経験したこと',
+					)
+				);
+			?>
+			<?php
+				get_template_part(
+					'template-parts/index',
+					'nagatomo',
+					array(
+						'slug'      => 'blogs',
+						'title'     => 'VLCNPとは',
+						'sub_title' => '思っていること 経験したこと',
+					)
+				);
+			?>
+			<?php
+				get_template_part(
+					'template-parts/index',
+					'utilities',
+					array(
+						'slug'      => 'blogs',
+						'title'     => 'VLCNPとは',
 						'sub_title' => '思っていること 経験したこと',
 					)
 				);
 			?>
 		<?php endif; ?>
 
-		<h2 class="heading heading--dropcap">Work<span class="heading__caption">得意なこと 仕事ぶり</span></h2>
-		<main id="main" class="site-main masonry" role="main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+		<section class="top-section">
+			<h2 class="heading heading--bold">Blog</h2>
+			<main id="main" class="ut_container" role="main">
 
 			<?php
-			endif;
+			if ( have_posts() ) :
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+				if ( is_home() && ! is_front_page() ) : ?>
+					<header>
+						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					</header>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content','preview' );
+				<?php
+				endif;
 
-			endwhile; ?>
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
+
+					/*
+					* Include the Post-Format-specific template for the content.
+					* If you want to override this in a child theme, then include a file
+					* called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					*/
+					get_template_part( 'template-parts/content','preview_blog' );
+
+				endwhile; ?>
 
 
 
-		<?php else :
+			<?php else :
 
-			get_template_part( 'template-parts/content', 'none' );
+				get_template_part( 'template-parts/content', 'none' );
 
-		endif; ?>
+			endif; ?>
 
-		</main><!-- #main -->
+			</main><!-- #main -->
+			<div class="callout mt-40">
+				<a href="/blog/" class="callout__button">もっと読む</a>
+			</div>
+		</section>
 	</div><!-- #primary -->
 
 <?php
