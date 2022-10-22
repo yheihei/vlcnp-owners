@@ -326,8 +326,8 @@ div.entry-content a {
 }
 
 #main.col-8-12-custom {
-	width: 65%;
-	margin-right: 8%;
+	width: 69%;
+	margin-right: 5%;
 }
 @media (max-width: 767px) {
 	#main.col-8-12-custom {

@@ -27,9 +27,4 @@
 			<?php the_time('Y.m.d'); ?>
 		</p>
 	</div>
-
-<div class="overbox">
-	<div class="tagline overtext"> <?php draft_portfolio_category();?> </div>
-</div>
-
 </article><!-- #post-## -->
