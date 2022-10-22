@@ -1,11 +1,6 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * The template for displaying archive pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,85 +9,53 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<?php if ( is_home() && ! is_paged() ) : ?>
-			<?php
-				get_template_part(
-					'template-parts/index',
-					'about',
-					array(
-						'slug'      => 'blogs',
-						'title'     => 'VLCNPとは',
-						'sub_title' => '思っていること 経験したこと',
-					)
-				);
-			?>
-			<?php
-				get_template_part(
-					'template-parts/index',
-					'nagatomo',
-					array(
-						'slug'      => 'blogs',
-						'title'     => 'VLCNPとは',
-						'sub_title' => '思っていること 経験したこと',
-					)
-				);
-			?>
-			<?php
-				get_template_part(
-					'template-parts/index',
-					'utilities',
-					array(
-						'slug'      => 'blogs',
-						'title'     => 'VLCNPとは',
-						'sub_title' => '思っていること 経験したこと',
-					)
-				);
-			?>
-		<?php endif; ?>
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main col-8-12-custom" role="main">
+    <?php if ( is_category() ) : ?>
+      <?php
+      $cat_info = get_category( $cat );
+      ?>
+      <h1 class="heading heading--bold"><?php echo wp_specialchars( $cat_info->name ); ?></h1>
+    <?php endif; ?>
 
-		<section class="top-section">
-			<h2 class="heading heading--bold">Blog</h2>
-			<main id="main" class="ut_container" role="main">
+    <?php
+    if(is_category_list_page()) : 
+      // 特定のカテゴリーページの場合、直近の子カテゴリーのみ一覧表示する
+      get_template_part( 'template-parts/content', 'preview_category' );
+    else :
+      // 通常のカテゴリーページ
+      if ( have_posts() ) : ?>
+        <?php
+        /* Start the Loop */
+        ?>
+        <div class="yhei-grid" >
+        <?php
+        while ( have_posts() ) : the_post();
 
-			<?php
-			if ( have_posts() ) :
+          /*
+          * Include the Post-Format-specific template for the content.
+          * If you want to override this in a child theme, then include a file
+          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+          */
+          // get_template_part( 'template-parts/content', get_post_format() );
+          get_template_part( 'template-parts/content', 'preview' );
 
-				if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
+        endwhile;
+        ?>
+        </div>
+        <?php
+        get_template_part( 'pagination' ); 
 
-				<?php
-				endif;
+      else :
 
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+        get_template_part( 'template-parts/content', 'none' );
 
-					/*
-					* Include the Post-Format-specific template for the content.
-					* If you want to override this in a child theme, then include a file
-					* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					*/
-					get_template_part( 'template-parts/content','preview_blog' );
+      endif; ?>
 
-				endwhile; ?>
-
-
-
-			<?php else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
-			endif; ?>
-
-			</main><!-- #main -->
-			<div class="callout mt-40">
-				<a href="/blog/" class="callout__button">もっと読む</a>
-			</div>
-		</section>
-	</div><!-- #primary -->
+    <?php endif ; ?>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 
 <?php
-get_template_part( 'pagination' ); 
+get_sidebar(); 
 get_footer();
