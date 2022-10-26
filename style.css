@@ -65,7 +65,7 @@ li {
 
 .custom-logo {
   width: 190px;
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 header h1.site-title,
@@ -217,9 +217,8 @@ article.grid-item .post-title h2.entry-title a:hover,
 p.date {
   color: gray;
   text-align: left;
-  margin: 8px 0 0 0;
+  margin: 0;
   font-size: 1.4rem;
-  text-align: right;
 }
 
 p.date--small {
@@ -659,6 +658,11 @@ a.more-link__default:hover {
   font-weight: bold;
 }
 
+.saboxplugin-wrap .saboxplugin-socials {
+  padding-right: 2.0rem !important;
+  padding-left: 2.0rem !important;
+}
+
 /* 人気記事一覧カスタマイズ */
 .yhei-post {
   line-height: 1.5;
@@ -752,6 +756,7 @@ a.more-link__default:hover {
 .callout a.callout__button {
   color: white;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 /* レイアウトカスタマイズ */
