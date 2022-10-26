@@ -12,22 +12,17 @@
 ?>
 
 	</div><!-- #content -->
+	<img class="before_footer_verylong" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vlcnp_footer.png">
 	</div>
 	</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="grid">
-				<div class="main-nav col-1-1">
+		<div class="site-info footer_sns">
+			<a class="footer_sns__icon" href="https://discord.gg/mAz7HAu9" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png" alt=""></a>
+			<a class="footer_sns__icon" href="https://opensea.io/collection/very-long-cnp" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/opensea.png" alt=""></a>
+			<a class="footer_sns__icon" href="https://twitter.com/verylongcnp" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png" alt=""></a>
+		</div>
 
-		<?php	if (  has_nav_menu( 'social' ) ) {
-		 wp_nav_menu(array(
-        'menu' => 'Main Navigation',
-        'container_id' => 'cssmenu',
-        'theme_location' => 'social',
-        'walker' => new Draft_Portfolio_CSS_Menu_Walker()
-    	));	}?>
-    	</div>
-
-		<div class="site-info col-1-1">
+		<div class="site-info">
 			Copyright &copy; 2022 Very Long CNP.
 		</div><!-- .site-info -->
 		</div>
