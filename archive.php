@@ -15,7 +15,7 @@ get_header(); ?>
       <?php
       $cat_info = get_category( $cat );
       ?>
-      <h1 class="heading heading--bold"><?php echo wp_specialchars( $cat_info->name ); ?></h1>
+      <h1 class="heading heading--bold"><?php echo esc_html( $cat_info->name ); ?></h1>
     <?php endif; ?>
 
     <?php
