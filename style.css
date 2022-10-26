@@ -402,8 +402,31 @@ div.entry-content a {
   margin-bottom: 80px;
 }
 
+.before_footer_verylong {
+  width: 100%;
+}
+
+.footer_sns {
+  width: 100%;
+  text-align: center;
+}
+
+.footer_sns__icon {
+  display: inline-block;
+  margin-right: 2.0rem;
+}
+
+.footer_sns__icon:hover {
+  opacity: initial;
+}
+
+.footer_sns .footer_sns__icon:last-child {
+  margin-right: 0;
+}
+
 .site-footer {
   background-color: #333333;
+  padding-top: 4.0rem;
 }
 
 .site-footer #cssmenu ul {
@@ -428,8 +451,16 @@ div.entry-content a {
   padding: 15px 30px 15px 0px;
 }
 
+.site-footer .site-info {
+  margin-bottom: 2rem;
+}
+
+.site-footer .site-info:last-child {
+  margin-bottom: 0rem;
+}
+
 .site-footer .site-info, .site-footer .site-info a {
-  text-align: left;
+  text-align: center;
 }
 
 .widget {
@@ -519,7 +550,7 @@ a.top-category-link {
   font-weight: 600;
   font-style: normal;
   font-size: 2.4rem;
-  margin-bottom: 1.4rem;
+  margin: 0 0 1.4rem;
 }
 
 input[type="search"] {
