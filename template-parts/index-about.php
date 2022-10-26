@@ -52,6 +52,6 @@ $the_query      = create_posts_query_by_category( $args['slug'], $posts_per_page
 		<div class="about_container__item mt-30"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/7571.jpg" /></div>
 	</div>
 	<div class="callout mt-40">
-		<a href="https://opensea.io/collection/very-long-cnp" target="_blank" class="callout__button">Openseaで見る</a>
+		<a href="https://opensea.io/collection/very-long-cnp" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/opensea.png">Openseaで見る</a>
 	</div>
 </section>

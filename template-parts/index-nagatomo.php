@@ -30,6 +30,6 @@ $the_query      = create_posts_query_by_category( $args['slug'], $posts_per_page
 		</div>
 	</div>
 	<div class="callout mt-40">
-		<a href="https://discord.gg/mAz7HAu9" target="_blank" class="callout__button">コミュニティに参加する</a>
+		<a href="https://discord.gg/mAz7HAu9" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png">コミュニティに参加する</a>
 	</div>
 </section>

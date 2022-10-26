@@ -753,6 +753,11 @@ a.more-link__default:hover {
   padding: 2rem 0;
 }
 
+.callout__button img {
+  display: inline-block;
+  margin: 0 0.8rem -0.8rem 0;
+}
+
 .callout a.callout__button {
   color: white;
   font-weight: bold;
