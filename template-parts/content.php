@@ -53,4 +53,5 @@
 	<footer class="entry-footer">
 		<?php draft_portfolio_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	<?php yarpp_related(); ?>
 </article><!-- #post-## -->
