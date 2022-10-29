@@ -34,8 +34,7 @@ $the_query      = create_posts_query_by_category( $args['slug'], $posts_per_page
 				Discordコミュニティも稼働中！
 			</p>
 		</div>
-		<div class="about_container__item"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cnp_top.jpg" /></div>
-		<div class="about_container__item"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vla2.jpeg" /></div>
+		<div class="about_container__item--w-64"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cnp_vla-min.png" /></div>
 	</div>
 	<div class="callout mt-40">
 		<a href="/" class="callout__button">VLCNPの歴史を見る</a>
