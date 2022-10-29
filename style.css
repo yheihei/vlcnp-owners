@@ -482,6 +482,10 @@ h2.widget-title {
   font-family: "Saira Condensed", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
+.twitter-timeline {
+  width: 100% !important;
+}
+
 .heading {
   font-family: "Saira Condensed", sans-serif;
   font-weight: 400;
@@ -974,13 +978,6 @@ p.blog-entry2__date {
   }
 }
 
-/* .ut_container__item p {
-  font-size: 2rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-} */
-
-
 /* 関連記事 */
 .yarpp_container {
   display: flex;
@@ -1005,6 +1002,18 @@ p.blog-entry2__date {
 .yarpp_container__titlearea > .yarpp_container__date {
   font-size: 1.4rem;
   margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .yarpp_container__item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 700px) {
+  .yarpp_container__item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
