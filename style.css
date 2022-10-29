@@ -822,16 +822,14 @@ a.more-link__default:hover {
   }
 
   .top-section--nagatomo {
-    background-color:rgba(255,255,255,0.8);
-    background-blend-mode:lighten;
     background-image: url(../draft-portfolio_child/img/98.png);
   }
 }
 
 @media (max-width: 700px) {
   .top-section--nagatomo {
-    background-size: 70%;
-    background-position: 200% bottom;
+    background-size: 80%;
+    background-position: right bottom;
   }
 }
 
@@ -940,6 +938,7 @@ p.blog-entry2__date {
   }
   .about_container p {
     text-align: center;
+    font-weight: bold;
   }
   .about_container img {
     margin: 0 auto;
