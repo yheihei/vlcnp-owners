@@ -74,6 +74,12 @@ li {
   padding-top: 3px;
 }
 
+@media (max-width: 1023px) {
+  .custom-logo {
+    margin:0 auto;
+  }
+}
+
 header h1.site-title,
 header p.site-description {
   font-family: "Saira Condensed", sans-serif;
