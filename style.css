@@ -474,6 +474,10 @@ div.entry-content a {
   text-align: center;
 }
 
+#secondary {
+  padding: 0;
+}
+
 .widget {
   margin: 0 0 4rem;
 }
@@ -646,6 +650,12 @@ a.more-link__default:hover {
 
 .cat-links {
   font-size: 1.4rem;
+}
+
+p.post-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: .5rem;
 }
 
 .post-navigation .nav-links {
