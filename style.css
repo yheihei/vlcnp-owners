@@ -1016,4 +1016,8 @@ p.blog-entry2__date {
   }
 }
 
+a.page-numbers, span.page-numbers {
+  font-size: 1.6rem;
+}
+
 /*# sourceMappingURL=style.css.map */
