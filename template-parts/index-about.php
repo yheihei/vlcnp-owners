@@ -44,12 +44,7 @@ $the_query      = create_posts_query_by_category( $args['slug'], $posts_per_page
 <section class="top-section container full-width color-secondory">
 	<h2 class="heading heading--bold">CNP met Very Long Animals...</h2>
 	<div class="about_container">
-		<div class="about_container__item"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/vlcnp1.webp" /></div>
-		<div class="about_container__item"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/442.jpg" /></div>
-		<div class="about_container__item"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/530.jpg" /></div>
-		<div class="about_container__item mt-30"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1678.jpg" /></div>
-		<div class="about_container__item mt-30"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2463.jpg" /></div>
-		<div class="about_container__item mt-30"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/7571.jpg" /></div>
+		<div class="about_container__item--w-100"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-min.png" /></div>
 	</div>
 	<div class="callout mt-40">
 		<a href="https://opensea.io/collection/very-long-cnp" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/opensea.png">Openseaで見る</a>
