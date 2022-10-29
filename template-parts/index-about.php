@@ -37,7 +37,7 @@ $the_query      = create_posts_query_by_category( $args['slug'], $posts_per_page
 		<div class="about_container__item--w-64"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cnp_vla-min.png" /></div>
 	</div>
 	<div class="callout mt-40">
-		<a href="/" class="callout__button">VLCNPの歴史を見る</a>
+		<a href="/about/" class="callout__button">VLCNPの歴史を見る</a>
 	</div>
 </section>
 <section class="top-section container full-width color-secondory">
