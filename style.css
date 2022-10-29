@@ -648,6 +648,11 @@ a.more-link__default:hover {
   font-size: 1.4rem;
 }
 
+p.post-description {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
 .post-navigation .nav-links {
   font-size: 1.8rem;
 }
