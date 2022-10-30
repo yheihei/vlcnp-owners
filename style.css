@@ -1030,4 +1030,19 @@ a.page-numbers, span.page-numbers {
   font-size: 1.6rem;
 }
 
+/*
+ * Cool TimeLine 
+ */
+.entry-content .cool-vertical-timeline-body h3 {
+  border-width: 0;
+}
+
+.cool-vertical-timeline-body .timeline-content .story-details h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
