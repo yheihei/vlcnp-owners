@@ -545,12 +545,6 @@ a.top-category-link {
   }
 }
 
-.yarpp-related h3.yarpp-related--custom{
-  border-width: 0 0 2px 0;
-  padding-bottom: 8px;
-  font-size: 2rem;
-}
-
 /* サイドバーのデザイン */
 #secondary ul {
   margin: 0;
@@ -1147,7 +1141,8 @@ line-height:1.5;
 .yarpp-related h3.yarpp-related--custom {
   border-width: 0 0 2px 0;
   padding-bottom: 8px;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 2.4rem;
   border-color: black;
   margin-bottom: 2rem;
 }

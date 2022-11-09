@@ -4,7 +4,7 @@ YARPP Template: Thumbnails
 Description: Requires a theme which supports post thumbnails
 Author: mitcho (Michael Yoshitaka Erlewine)
 */ ?>
-<h3 class="heading yarpp-related--custom">こちらも読まれています</h3>
+<h3 class="heading yarpp-related--custom">Related Posts</h3>
 <?php if (have_posts()):?>
 	<section class="yarpp_container">
 	<?php while (have_posts()) : the_post(); ?>
