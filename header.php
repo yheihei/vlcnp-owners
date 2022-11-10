@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'draft-portfolio' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-	<div class="site-branding col-6-12">
+	<div class="site-branding col-1-4">
 	<h1 class="site-title">
 			<?php
 
@@ -50,7 +50,7 @@
             <?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<div class="main-nav col-6-12 pull-right" style="padding-right:0;">
+		<div class="main-nav col-9-12 pull-right" style="padding-right:0;">
 
 		<?php	if (  has_nav_menu( 'primary' ) ) {
 		 wp_nav_menu(array(
