@@ -10,26 +10,28 @@
 ?>
 
 <?php
-$posts_per_page = $args['posts_per_page'] ?? 6;
-$the_query      = create_posts_query_by_category( $args['slug'], $posts_per_page );
+$title = $args['title'];
+$description_1 = $args['description_1'];
+$description_2 = $args['description_2'];
+$description_3 = $args['description_3'];
+$call_out_label = $args['call_out_label'];
 ?>
 <section class="top-section top-section--nagatomo">
-	<h2 class="heading heading--bold">長友になる</h2>
+	<h2 class="heading heading--bold"><?php echo wp_kses_post( $title ); ?></h2>
 	<div class="about_container">
 		<div class="about_container__item--w-100">
 			<p>
-				VLCNPではなが〜〜くお付き合いできるお友達、<b>「長友」</b>を募集中！
+				<?php echo wp_kses_post( $description_1 ); ?>
 			</p>
 			<p>
-				Discordの中ではVLCNPの制作過程が公開されている他<br>
-				長友からのご意見 ご感想を広く受け付けています！
+				<?php echo wp_kses_post( $description_2 ); ?>
 			</p>
 			<p class="mb-0">
-				あなたの意見がVLCNPの未来を変えるカモ！？
+				<?php echo wp_kses_post( $description_3 ); ?>
 			</p>
 		</div>
 	</div>
 	<div class="callout mt-40">
-		<a href="https://discord.gg/mAz7HAu9" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png">コミュニティに参加する</a>
+		<a href="https://discord.gg/mAz7HAu9" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png"><?php echo wp_kses_post( $call_out_label ); ?></a>
 	</div>
 </section>

@@ -11,9 +11,11 @@ get_header(); ?>
 				'template-parts/index',
 				'about',
 				array(
-					'slug'      => 'blogs',
-					'title'     => 'VLCNPとは',
-					'sub_title' => '思っていること 経験したこと',
+					'description_1' => '国内で絶大な人気を誇る<br>Crypto Ninja Partners(CNP)と<br>Very Long Animals(VLA)が<br>タッグを組んだ！',
+					'description_2' => '90種類の個性豊かなアニマルたちと<br>お馴染みのCNPファミリーが<br>ベリーロングになって再登場！',
+					'description_3' => '総計11,111個のNFTコレクション！<br>なが〜〜〜く楽しめる<br>Discordコミュニティも稼働中！',
+					'about_label' => 'VLCNPの歴史を見る',
+					'call_out_label' => 'Openseaで見る',
 				)
 			);
 		?>
@@ -22,9 +24,11 @@ get_header(); ?>
 				'template-parts/index',
 				'nagatomo',
 				array(
-					'slug'      => 'blogs',
-					'title'     => 'VLCNPとは',
-					'sub_title' => '思っていること 経験したこと',
+					'title'      => '長友になる',
+					'description_1' => 'VLCNPではなが〜〜くお付き合いできるお友達、<b>「長友」</b>を募集中！',
+					'description_2' => 'Discordの中ではVLCNPの制作過程が公開されている他<br>長友からのご意見 ご感想を広く受け付けています！',
+					'description_3' => 'あなたの意見がVLCNPの未来を変えるカモ！？',
+					'call_out_label' => 'コミュニティに参加する',
 				)
 			);
 		?>
@@ -33,9 +37,8 @@ get_header(); ?>
 				'template-parts/index',
 				'utilities',
 				array(
-					'slug'      => 'blogs',
-					'title'     => 'VLCNPとは',
-					'sub_title' => '思っていること 経験したこと',
+					'title'     => 'ホルダー特典',
+					'call_out_label' => 'もっと見る',
 				)
 			);
 		?>
