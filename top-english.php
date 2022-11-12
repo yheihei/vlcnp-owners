@@ -15,7 +15,7 @@ get_header(); ?>
 					'description_2' => '90 unique animals and the well-known CNP family become very long!',
 					'description_3' => '11,111 NFT collections in total! Discord community is also up and running!',
 					'about_label' => 'VLCNP History',
-					'call_out_label' => 'Opensea',
+					'call_out_label' => 'OpenSea',
 				)
 			);
 		?>
