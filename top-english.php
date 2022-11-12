@@ -37,7 +37,7 @@ get_header(); ?>
 				'template-parts/index',
 				'utilities',
 				array(
-					'title'     => 'ホルダー特典',
+					'title'     => 'Utility',
 					'call_out_label' => 'More',
 				)
 			);
