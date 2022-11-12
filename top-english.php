@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: トップページ
+Template Name: トップページ(英語)
 */
 
 get_header(); ?>
@@ -11,11 +11,11 @@ get_header(); ?>
 				'template-parts/index',
 				'about',
 				array(
-					'description_1' => '国内で絶大な人気を誇る<br>Crypto Ninja Partners(CNP)と<br>Very Long Animals(VLA)が<br>タッグを組んだ！',
-					'description_2' => '90種類の個性豊かなアニマルたちと<br>お馴染みのCNPファミリーが<br>ベリーロングになって再登場！',
-					'description_3' => '総計11,111個のNFTコレクション！<br>なが〜〜〜く楽しめる<br>Discordコミュニティも稼働中！',
-					'about_label' => 'VLCNPの歴史を見る',
-					'call_out_label' => 'Openseaで見る',
+					'description_1' => "Crypto Ninja Partners (CNP) and Very Long Animals (VLA), two of the country's most popular NFT projects, have teamed up!",
+					'description_2' => '90 unique animals and the well-known CNP family become very long!',
+					'description_3' => '11,111 NFT collections in total! Discord community is also up and running!',
+					'about_label' => 'VLCNP History',
+					'call_out_label' => 'OpenSea',
 				)
 			);
 		?>
@@ -24,11 +24,11 @@ get_header(); ?>
 				'template-parts/index',
 				'nagatomo',
 				array(
-					'title'      => '長友になる',
-					'description_1' => 'VLCNPではなが〜〜くお付き合いできるお友達、<b>「長友」</b>を募集中！',
-					'description_2' => 'Discordの中ではVLCNPの制作過程が公開されている他<br>長友からのご意見 ご感想を広く受け付けています！',
-					'description_3' => 'あなたの意見がVLCNPの未来を変えるカモ！？',
-					'call_out_label' => 'コミュニティに参加する',
+					'title'      => 'Join Our Very Long Community',
+					'description_1' => 'Our community is looking for friends!',
+					'description_2' => 'The process of creating VLCNP is open to the public in our Discord server.<br>We are widely open to feedback from our Very Long friends!',
+					'description_3' => 'Your opinion may change the future of VLCNP!',
+					'call_out_label' => 'Join us!',
 				)
 			);
 		?>
@@ -37,8 +37,8 @@ get_header(); ?>
 				'template-parts/index',
 				'utilities',
 				array(
-					'title'     => 'ホルダー特典',
-					'call_out_label' => 'もっと見る',
+					'title'     => 'Utility',
+					'call_out_label' => 'More',
 				)
 			);
 		?>
@@ -72,7 +72,7 @@ get_header(); ?>
 
 			</main><!-- #main -->
 			<div class="callout mt-40">
-				<a href="/blog/" class="callout__button">もっと読む</a>
+				<a href="/blog/" class="callout__button">More</a>
 			</div>
 		</section>
 	</div><!-- #primary -->

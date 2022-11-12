@@ -10,6 +10,8 @@
 ?>
 
 <?php
+	$title = $args['title'];
+	$call_out_label = $args['call_out_label'];
 	$args = array(
 		'post_type' => 'utility'
 	);
@@ -17,7 +19,7 @@
 	if($custom_posts) :
 ?>
 		<section class="top-section full-width color-secondory">
-			<h2 class="heading heading--bold">ホルダー特典</h2>
+			<h2 class="heading heading--bold"><?php echo wp_kses_post( $title ); ?></h2>
 			<div class="ut_container">
 				<?php
 					foreach($custom_posts as $post) : setup_postdata( $post );
@@ -40,6 +42,9 @@
 							<?php endif; ?>
 						</div>
 				<?php endforeach; ?>
+			</div>
+			<div class="callout mt-40">
+				<a href="/utility/" class="callout__button"><?php echo wp_kses_post( $call_out_label ); ?></a>
 			</div>
 		</section>
 <?php
