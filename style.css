@@ -385,6 +385,7 @@ div.entry-content blockquote {
   margin-top: 20px;
   margin-right: 0px;
   margin-bottom: 20px;
+  margin-left: 0;
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #CCC;
@@ -671,6 +672,10 @@ p.post-description {
 
 .entry-content iframe {
   margin-bottom: 2.4rem;
+}
+
+.entry-content cite {
+  font-size: 1.6rem;
 }
 
 .saboxplugin-wrap a {
@@ -1056,8 +1061,9 @@ a.page-numbers, span.page-numbers {
 }
 
 .wp-block-image figcaption {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
+  font-style: italic;
 }
 
 .su-box-title {
@@ -1075,14 +1081,9 @@ a.page-numbers, span.page-numbers {
 }
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media (max-width: 767px) {
 .grid {
-    width: 100%;
-    min-width: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px !important;
 }
 }
 
