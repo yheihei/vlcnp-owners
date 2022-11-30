@@ -62,7 +62,7 @@
     	</div>
         <!--<?php do_action('draft-welcome-text')?>-->
         <?php if ( is_front_page() ) : ?>
-        <div class="cover"><img class="cover__image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cover.jpeg" /></div>
+        <div class="cover"><img class="cover__image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cover2.jpeg" /></div>
         <?php endif; ?>
 
 	</header><!-- #masthead -->
