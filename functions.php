@@ -6,6 +6,11 @@ function theme_enqueue_styles() {
   wp_enqueue_style( 'draft-portfolio-style', get_stylesheet_uri(), null, filemtime( get_stylesheet_directory() . '/style.css'), null );
 }
 
+function change_thumbnail_size() {
+  add_image_size( 'draft-portfolio-thumbnail', 1200, 630, TRUE );
+}
+add_action( 'after_setup_theme', 'change_thumbnail_size', 11);
+
 /**
  * 管理画面
  */
