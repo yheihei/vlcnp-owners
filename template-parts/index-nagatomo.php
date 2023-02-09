@@ -32,7 +32,7 @@ $call_out_label = $args['call_out_label'];
 		</div>
 	</div>
 	<div class="callout mt-40">
-		<a href="https://discord.gg/mAz7HAu9" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png"><?php echo wp_kses_post( $call_out_label ); ?></a>
+		<a href="https://discord.gg/ninjadao" target="_blank" class="callout__button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png"><?php echo wp_kses_post( $call_out_label ); ?></a>
 	</div>
 	<div class="callout mt-40">
 		<a href="<?php echo get_permalink( 665 ) ?>" class="callout__button">Discordの歩き方</a>
