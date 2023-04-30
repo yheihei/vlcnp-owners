@@ -17,7 +17,7 @@
 	</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info footer_sns">
-			<a class="footer_sns__icon" href="https://discord.gg/ninjadao" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png" alt=""></a>
+			<a class="footer_sns__icon" href="https://discord.gg/HGtxVbTtxJ" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/discord.png" alt=""></a>
 			<a class="footer_sns__icon" href="https://opensea.io/collection/very-long-cnp" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/opensea.png" alt=""></a>
 			<a class="footer_sns__icon" href="https://twitter.com/verylongcnp" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png" alt=""></a>
 		</div>
